@@ -1,0 +1,22 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: "AvenirNextCyr", sans-serif;
+  // --content-width: 1170px;
+  // --container-offset: 15px;
+  // --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --color-white: #fff;
+  --color-black: #000;
+  --color-text: #0f303f;
+  --color-not-btn: #cec6c4;
+  --color-mercury: #eae9e8;
+  --color-submarine: #b7c1c5;
+  --color-cinnabar: #e64926;
+  --color-red: #ff0000;
+  --color-blue: #1931aa;
+  --color-old-price: #cecece;
+  --color-price: #fd5454;
+}

@@ -1,0 +1,53 @@
+.breadcrumbs {
+
+  &__list {
+    display: flex;
+    overflow-x: auto;
+    margin-right: auto;
+    padding-top: 8px;
+    padding-bottom: 23px;
+    white-space: nowrap;
+  }
+
+  &__item {
+    position: relative;
+    flex-shrink: 0;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 1.4;
+    color: var(--color-text);
+    transition: color 0.3s;
+
+    &:not(:last-child) {
+      margin-right: 19px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        border: 2px solid var(--color-text);
+        border-radius: 100%;
+        right: -12px;
+        top: 5px;
+
+        @include mobile-m {
+          right: -22px;
+        }
+      }
+
+      @include mobile-m {
+        margin-right: 40px;
+      }
+    }
+
+    &:hover {
+      color: var(--color-submarine);
+      transition: color 0.3s;
+    }
+  }
+
+  &__link {
+    &--current {
+      color: var(--color-submarine);
+    }
+  }
+}
