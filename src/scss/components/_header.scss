@@ -31,9 +31,10 @@
       justify-content: flex-start;
       text-align: center;
       text-transform: uppercase;
-      background-color: var(--color-dark-green);
+      background-color: var(--color-text);
       transition: 0.3s;
       transform: translateX(-100%);
+      opacity: 0.95;
     }
   }
 
@@ -41,6 +42,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include macbook {
+      flex-direction: column;
+      margin-bottom: 100px;
+    }
   }
 
   &__item {
@@ -50,6 +56,11 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--color-submarine);
+    transition: color 0.3s;
+
+    &:hover {
+      color: var(--color-text);
+    }
 
     &:not(:last-child) {
       margin-right: 45px;
@@ -57,10 +68,19 @@
       @include tablet {
         margin-right: 25px;
       }
+
+      @include macbook {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
     }
 
     &--current {
       color: var(--color-text);
+    }
+
+    @include macbook {
+      color: var(--color-submarine);
     }
   }
 
@@ -95,6 +115,10 @@
 
   @include desktop {
     margin-right: 20px;
+  }
+
+  @include macbook {
+    margin-right: 0;
   }
 }
 
@@ -177,6 +201,10 @@ input[type=search] {
 .hamburger-inner {
   width: 20px;
   height: 2px;
+}
+
+.hamburger.is-active .hamburger-inner {
+  background-color: var(--color-submarine);
 }
 
 .hamburger-inner::before {
