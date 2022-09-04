@@ -6,7 +6,6 @@
   }
 
   &__container {
-    // border-bottom: 1px solid var(--color-mercury);
     margin: 0 auto;
     text-align: center;
     padding-bottom: 60px;
@@ -127,7 +126,6 @@
 
     @include mobile-m {
       display: block;
-      // text-align: center;
     }
   }
 }

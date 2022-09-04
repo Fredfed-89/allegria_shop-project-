@@ -13,4 +13,7 @@ const mySwiper = new Swiper('.swiper', {
       slidesPerView: 3,
     }
   },
+  autoplay: {
+    delay: 5000,
+  },
 });

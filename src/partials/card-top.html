@@ -1,5 +1,7 @@
 <div class="card-top">
   <div class="container card-top__container">
+
+
     <div class="card-top__content">
       <div class="card-top__right-top-dublicate">
         <h2 class="card-top__title">American vintage</h2>
@@ -9,23 +11,55 @@
           <span class="card-top__price">3800 Uah</span>
         </div>
       </div>
+
       <div class="card-top__left">
         <ul class="card-top__thumbs list-reset">
           <li class="card-top__thumb">
-            <img src="img/image-1.jpg" alt="">
+            <div class="card-top__img-wrapper">
+              <picture>
+                <source srcset="img/image-1.avif" type="image/avif">
+                <source srcset="img/image-1.webp" type="image/webp">
+                <img class="card-top__image-thumb" src="img/image-1.jpg" width="85" height="105" loading="lazy"
+                  alt="one of the photos of the main product">
+              </picture>
+            </div>
           </li>
           <li class="card-top__thumb">
-            <img src="img/image-1.jpg" alt="">
+            <div class="card-top__img-wrapper">
+              <picture>
+                <source srcset="img/image-1.avif" type="image/avif">
+                <source srcset="img/image-1.webp" type="image/webp">
+                <img class="card-top__image-thumb" src="img/image-1.jpg" width="85" height="105" loading="lazy"
+                  alt="one of the photos of the main product">
+              </picture>
+            </div>
           </li>
           <li class="card-top__thumb">
-            <img src="img/image-1.jpg" alt="">
+            <div class="card-top__img-wrapper">
+              <picture>
+                <source srcset="img/image-1.avif" type="image/avif">
+                <source srcset="img/image-1.webp" type="image/webp">
+                <img class="card-top__image-thumb" src="img/image-1.jpg" width="85" height="105" loading="lazy"
+                  alt="one of the photos of the main product">
+              </picture>
+            </div>
           </li>
         </ul>
+
         <div class="card-top__image-inner">
-          <img class="card-top__image-main" src="img/image-main.jpg" alt="">
-          <button class="favorites-btn-20px btn-reset" aria-label="button to select a product to favorites"></button>
+          <div class="card-top__img-wrapper">
+            <picture>
+              <source srcset="img/image-main.avif" type="image/avif">
+              <source srcset="img/image-main.webp" type="image/webp">
+              <img class="card-top__image-main" src="img/image-main.jpg" width="428" height="520" loading="lazy"
+                alt="photo of the main product">
+            </picture>
+          </div>
+          <button class="favorites-btn-20px btn-reset" type="button"
+            aria-label="button to select a product to favorites"></button>
         </div>
       </div>
+
       <div class="card-top__right">
         <div class="card-top__right-top">
           <h2 class="card-top__title">American vintage</h2>
@@ -35,41 +69,47 @@
         <span class="card-top__size">Розмір</span>
         <ul class="card-top__size-list list-reset">
           <li class="card-top__choice">
-            <button class="card-top__size-btn btn-reset">XS</button>
+            <button class="card-top__size-btn btn-reset" type="button"
+              aria-label="product size selection button">XS</button>
           </li>
           <li class="card-top__choice">
-            <button class="card-top__size-btn btn-reset">S</button>
+            <button class="card-top__size-btn btn-reset" type="button"
+              aria-label="product size selection button">S</button>
           </li>
           <li class="card-top__choice">
-            <button class="card-top__size-btn btn-reset">M</button>
+            <button class="card-top__size-btn btn-reset" type="button"
+              aria-label="product size selection button">M</button>
           </li>
           <li class="card-top__choice">
-            <button class="card-top__size-btn btn-reset">L</button>
+            <button class="card-top__size-btn btn-reset" type="button"
+              aria-label="product size selection button">L</button>
           </li>
           <li class="card-top__choice card-top__choice--none">
-            <button class="card-top__size-btn card-top__size-btn--not btn-reset">XL</button>
+            <button class="card-top__size-btn card-top__size-btn--not btn-reset" type="button"
+              aria-label="product size selection button">XL</button>
           </li>
           <li class="card-top__choice card-top__choice--none">
-            <button class="card-top__size-btn card-top__size-btn--not btn-reset">XP</button>
+            <button class="card-top__size-btn card-top__size-btn--not btn-reset" type="button"
+              aria-label="product size selection button">XP</button>
           </li>
         </ul>
-        <button class="card-top__size-table-btn btn-reset">Таблиця розмірів</button>
+        <button class="card-top__size-table-btn btn-reset" type="button">Таблиця розмірів</button>
         <span class="card-top__color">Колір</span>
         <ul class="card-top__color-list list-reset">
           <li class="card-top__item-color">
-            <button class="card-top__color-btn card-top__color-btn--one btn-reset"
+            <button class="card-top__color-btn card-top__color-btn--one btn-reset" type="button"
               aria-label="white selection button"></button>
           </li>
           <li class="card-top__item-color">
-            <button class="card-top__color-btn card-top__color-btn--two btn-reset"
+            <button class="card-top__color-btn card-top__color-btn--two btn-reset" type="button"
               aria-label="red selection button"></button>
           </li>
           <li class="card-top__item-color">
-            <button class="card-top__color-btn card-top__color-btn--three btn-reset"
+            <button class="card-top__color-btn card-top__color-btn--three btn-reset" type="button"
               aria-label="blue selection button"></button>
           </li>
           <li class="card-top__item-color">
-            <button class="card-top__color-btn card-top__color-btn--four btn-reset"
+            <button class="card-top__color-btn card-top__color-btn--four btn-reset" type="button"
               aria-label="black selection button"></button>
           </li>
         </ul>
@@ -78,8 +118,8 @@
           <a class="card-top__btn-bottom" href="#">Купити в один клік</a>
         </div>
         <div class="card-top__terms">
-          <button class="card-top__payment btn-reset">Оплата та доставка</button>
-          <button class="card-top__return btn-reset">Повернення та обмін</button>
+          <button class="card-top__payment btn-reset" type="button">Оплата та доставка</button>
+          <button class="card-top__return btn-reset" type="button">Повернення та обмін</button>
         </div>
         <h3 class="card-top__subtitle">
           Інформація про товар
@@ -90,7 +130,8 @@
         </p>
       </div>
 
-
     </div>
+
+
   </div>
 </div>

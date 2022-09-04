@@ -5,14 +5,24 @@
         Схожі товари
       </h2>
       <div class="card-bottom__slider">
+
+
         <ul class="card-bottom__list list-reset">
           <div class="swiper">
             <div class="swiper-wrapper">
+
               <div class="swiper-slide">
                 <li class="card-bottom__item">
                   <div class="card-bottom__image-inner">
                     <span class="card-bottom__sale"></span>
-                    <img class="card-bottom__image" src="img/similar-image.jpg" alt="similar products">
+                    <div class="card-bottom__img-wrapper">
+                      <picture>
+                        <source srcset="img/similar-image.avif" type="image/avif">
+                        <source srcset="img/similar-image.webp" type="image/webp">
+                        <img class="card-bottom__image" src="img/similar-image.jpg" width="270" height="325"
+                          loading="lazy" alt="similar products">
+                      </picture>
+                    </div>
                     <button class="favorites-btn-10px btn-reset"
                       aria-label="button to select a product to favorites"></button>
                   </div>
@@ -24,10 +34,16 @@
                   </div>
                 </li>
               </div>
+
               <div class="swiper-slide">
                 <li class="card-bottom__item">
                   <div class="card-bottom__image-inner">
-                    <img class="card-bottom__image" src="img/similar-image-2.jpg" alt="similar products">
+                    <picture>
+                      <source srcset="img/similar-image-2.avif" type="image/avif">
+                      <source srcset="img/similar-image-2.webp" type="image/webp">
+                      <img class="card-bottom__image" src="img/similar-image-2.jpg" width="270" height="325"
+                        loading="lazy" alt="similar products">
+                    </picture>
                     <button class="favorites-btn-10px btn-reset"
                       aria-label="button to select a product to favorites"></button>
                   </div>
@@ -38,11 +54,19 @@
                   </div>
                 </li>
               </div>
+
               <div class="swiper-slide">
                 <li class="card-bottom__item">
                   <div class="card-bottom__image-inner">
                     <span class="card-bottom__sale"></span>
-                    <img class="card-bottom__image" src="img/similar-image-3.jpg" alt="similar products">
+                    <div class="card-bottom__img-wrapper">
+                      <picture>
+                        <source srcset="img/similar-image-3.avif" type="image/avif">
+                        <source srcset="img/similar-image-3.webp" type="image/webp">
+                        <img class="card-bottom__image" src="img/similar-image-3.jpg" width="270" height="325"
+                          loading="lazy" alt="similar products">
+                      </picture>
+                    </div>
                     <button class="favorites-btn-10px btn-reset"
                       aria-label="button to select a product to favorites"></button>
                   </div>
@@ -54,6 +78,7 @@
                   </div>
                 </li>
               </div>
+
             </div>
           </div>
           <div class="slider-btns">
@@ -61,6 +86,8 @@
             <div class="swiper-button-next swiper-button-next--right"></div>
           </div>
         </ul>
+
+
       </div>
     </div>
   </div>

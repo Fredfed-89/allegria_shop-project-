@@ -1,5 +1,4 @@
 .card-top {
-
   &__content {
     display: flex;
     margin-bottom: 146px;
@@ -80,6 +79,11 @@
     }
   }
 
+  &__image-thumb {
+    height: 100%;
+    max-width: 105px;
+  }
+
   &__image-inner {
     position: relative;
     height: 100%;
@@ -113,7 +117,9 @@
   }
 
   &__right-top {
-    text-align: center;
+    @include macbook {
+      text-align: center;
+    }
 
     @include mobile-l {
       display: none;
@@ -141,12 +147,6 @@
     align-items: center;
     letter-spacing: 0.045em;
     text-transform: uppercase;
-
-    @include mobile-m {
-      // display: flex;
-      // justify-content: center;
-      // flex-wrap: wrap;
-    }
   }
 
   &__old-price {
@@ -163,9 +163,12 @@
     letter-spacing: 0.045em;
     text-transform: uppercase;
 
+    @include mobile-l {
+      color: var(--color-price);
+    }
+
     @include mobile-m {
       font-size: 14px;
-      color: var(--color-price);
     }
   }
 
